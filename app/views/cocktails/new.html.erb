@@ -1,0 +1,7 @@
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :name %>
+  <%= f.simple_fields_for :doses do |p| %>
+    <%= p.input :description %>
+  <% end %>
+  <%= f.submit %>
+<% end %>
